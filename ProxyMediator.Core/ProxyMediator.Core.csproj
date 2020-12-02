@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageId>Itok.ProxyMediator.Core</PackageId>
+		<Authors>itoktsnhc@hotmail.com</Authors>
+		<Description>Itok.ProxyMediator.Core</Description>
+        <Copyright>itoktsnhc@hotmail.com</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/Itoktsnhc/Itok.ProxyMediator</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Itoktsnhc/Itok.ProxyMediator</RepositoryUrl>
+        <PackageTags>Proxy</PackageTags>
+        <PackageReleaseNotes>Init release</PackageReleaseNotes>
+        <AssemblyVersion>1.1.0.0</AssemblyVersion>
+        <FileVersion>1.1.0.0</FileVersion>
+        <Version>1.1.0</Version>
+    </PropertyGroup>
+
+</Project>
