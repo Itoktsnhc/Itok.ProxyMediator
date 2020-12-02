@@ -39,7 +39,7 @@ namespace ProxyMediator.Core.Sessions
                     try
                     {
                         var processor = Handlers[result];
-                        Console.WriteLine($"[{context.Id}] {result} → {processor.GetType()} ↓");
+                        //Console.WriteLine($"[{context.Id}] {result} → {processor.GetType()} ↓");
                         result = await processor.Run(proxyConfig.Handler, context);
                     }
                     catch (Exception)
@@ -48,7 +48,7 @@ namespace ProxyMediator.Core.Sessions
                     }
                 } while (result != LastPipeState.GameOver);
 
-                Console.WriteLine($"[{context.Id}] {result} ⬆");
+                //Console.WriteLine($"[{context.Id}] {result} ⬆");
             }
 
             pool.ContextContainer.TryRemove(contextId, out _);
