@@ -18,7 +18,6 @@ namespace ProxyMediator.Extension
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
-            Console.WriteLine($"IHostedService.StartAsync for {GetType().Name}");
             _appLifetime.ApplicationStarted.Register(
                 async () => 
                     await ExecuteAsync(_appStoppingTokenSource.Token).ConfigureAwait(false)
@@ -28,7 +27,6 @@ namespace ProxyMediator.Extension
 
         public async Task StopAsync(CancellationToken cancellationToken)
         {
-            Console.WriteLine($"IHostedService.StopAsync for {GetType().Name}");
             _appStoppingTokenSource.Cancel();
             await StoppingAsync(cancellationToken).ConfigureAwait(false);
             Dispose();
